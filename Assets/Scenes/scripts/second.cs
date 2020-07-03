@@ -9,11 +9,14 @@ public class second : MonoBehaviour
     public string newScene;
     private void Start()
     {
+        //Debug.Log("Called start");
         button.onClick.AddListener(onButtonClick);
     }
+   
     private void onButtonClick()
     {
         Debug.Log("Button Clicked");
         SceneManager.LoadScene(newScene);
     }
+    
 }
